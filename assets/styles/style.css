@@ -254,6 +254,7 @@
 }
 .main-sub-container {
   height: 760px;
+  max-height: 760px;
   min-height: 750px;
   display: flex;
   justify-content: center;
@@ -405,6 +406,10 @@
   }
 }
 @media (max-width: 768px) {
+  .main-sub-container {
+    min-height: 650px;
+    height: 100vh;
+  }
   #header {
     min-height: 500px;
     height: 70%;
