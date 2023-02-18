@@ -408,7 +408,7 @@
 @media (max-width: 768px) {
   .main-sub-container {
     min-height: 650px;
-    height: 100vh;
+    height: 90vh;
   }
   #header {
     min-height: 500px;
