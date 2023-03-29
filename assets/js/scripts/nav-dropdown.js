@@ -63,4 +63,30 @@ $(document).ready(function () {
   }
 
   lectureDropdownFunc();
+
+  function clickAwayToClose() {
+    $(document).click(function (e) {
+      if (!$(e.target).closest(".lecture-link").length) {
+        console.log("NOT-OK-NAV");
+        $("#lecture-dropdown-container").slideUp(500);
+      }
+    });
+
+    // $(document).click(function (e) {
+    //   if (
+    //     !$(e.target).closest("#nav-links-list").length ||
+    //     !$(e.target).closest(".ham-menu").length
+    //   ) {
+    //     console.log("NOT-OK-NAVNav");
+    //     $("#nav-links-list").slideUp(500);
+    //   }
+    // });
+  }
+  clickAwayToClose();
+  // $(document).click(function (e) {
+  //   if (!$(e.target).closest(quickUpdatesContainer).length) {
+  //     console.log("NOT-OK");
+  //     quickUpdates.slideUp(500);
+  //   }
+  // });
 });
